@@ -1,5 +1,6 @@
 #! /bin/bash
 source ./configuration.sh
+echo "Hey"
 
 if [ $# -eq 0 ]; then 
     echo "Aucun paramètre n'a été passé."
