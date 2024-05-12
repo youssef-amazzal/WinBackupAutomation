@@ -58,17 +58,25 @@ for param in "$@"; do
         -l ) 
            # bash log.sh 
            read -p "Tapez le chemin absolu de la nouvelle fichier de journalisation :" FILE_JOURN
-            ls "$FILE_JOURN"    #seulement pour le teste
             ;;
         -r ) 
-            bash restor.sh 
+            #bash restor.sh 
+            Destination="/back_up"
+            FILE_JOURN="/back_up/Journalisation/journ.txt"
             ;;
         -d ) 
            # bash destination.sh 
             read -p "Tapez le chemin absolu du nouveau dossier de sauvgarde :" Destination
-
             ;;
-        
+         * )
+            if [ -e "$param" ]; then 
+                 zip -r "$Destination/$param.zip" "$param"
+            else
+                echo "Le fichier ou le dossier '$param' n'existe pas."
+            fi
+           ;;
     esac
+
+   # if [ $param!= ]
 
 done
