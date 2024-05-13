@@ -51,7 +51,7 @@ for param in "$@"; do
             bash fork.sh 
             ;;
         -t ) 
-            bash tread.sh 
+            bash threads.sh 
             ;;
         -s ) 
             bash subshell.sh 
