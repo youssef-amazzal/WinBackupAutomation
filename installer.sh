@@ -23,6 +23,8 @@ get_packages() {
 # Function to check if a package is already installed
 check_package() {
     local id=$1
+    local package_name=$2
+    log_message 'INFO' "Checking if package $package_name is installed..."
     if ! pwsh_get_installed_package $id | grep -q "$id"; then
         return 1
     else
@@ -34,6 +36,7 @@ check_package() {
 install_package() {
     local id=$1
     local package_name=$2
+    pwsh_install_package "$id"
     if ! pwsh_get_installed_package $id | grep -q "$id"; then
         log_message "ERROR" "Failed to install package: $package_name"
         echo "$package_name" >> failed_packages.txt
@@ -43,7 +46,8 @@ install_package() {
 }
 
 main() {
-    packages=$(get_packages)
+    # Read packages from CSV file, skipping the header line
+    mapfile -t packages < <(tail -n +2 packages.csv)
 
     # Install dependencies if not already installed
     for line in "${packages[@]}"
@@ -54,7 +58,7 @@ main() {
         
         log_message "INFO" "Checking package: $package_name"
         if check_package "$id"; then
-            log_message "INFO" "Package already installed: $package_name"
+            log_message "SUCCESS" "Package already installed: $package_name"
         else
             log_message "INFO" "Installing package: $package_name"
             install_package "$id" "$package_name"

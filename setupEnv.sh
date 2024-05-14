@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Check if the script is run with sudo
-if [[ $EUID -ne 0 ]]; then
-   echo "PERMISSION DENIED: This script must be run as root." >&2
-   exit 1
-fi
-
 # ===================== Load User Settings =====================
 USER_SETTINGS_FILE="$HOME/.win_backup_config"
 
@@ -108,19 +102,37 @@ pwsh_install_package() {
 export -f pwsh_install_package
 
 pwsh_get_installed_packages() {
-    log_message 'INFO' 'Getting installed packages...'
-    $PWSH "Get-WinGetPackage | Where-Object Source -in 'winget', 'msstore' | Select-Object -Property Id,Name | ConvertTo-Csv -NoTypeInformation | Select-Object -Skip 1" || handle_error $COMMAND_EXECUTION_FAIL "Failed to get installed packages."
-    log_message 'SUCCESS' 'Installed packages retrieved.'
+    log_message 'INFO' 'Getting installed packages...' >&2
+    local packages=$($PWSH "Get-WinGetPackage | Where-Object Source -in 'winget', 'msstore' | Select-Object -Property Id,Name | ConvertTo-Csv -NoTypeInformation | Select-Object -Skip 1") || handle_error $COMMAND_EXECUTION_FAIL "Failed to get installed packages."
+    log_message 'SUCCESS' 'Installed packages retrieved.' >&2
+    echo "$packages"
 }
 export -f pwsh_get_installed_packages
 
 pwsh_get_installed_package() {
     local id=$1
     log_message 'INFO' "Getting installed package with id: $id..."
-    $PWSH -Command "Get-WinGetPackage -Id $id" || handle_error $COMMAND_EXECUTION_FAIL "Failed to get installed package with id: $id."
-    log_message 'SUCCESS' "Installed package with id: $id retrieved."
+    local package=$($PWSH -Command "Get-WinGetPackage -Id $id")
+    if [[ -z "$package" || "$package" != *"$id"* ]]; then
+        log_message 'ERROR' "Package with id: $id is not installed."
+        return 1
+    else
+        log_message 'SUCCESS' "Installed package with id: $id retrieved."
+        echo "$package"
+        return 0
+    fi
 }
 export -f pwsh_get_installed_package
+
+path_to_wsl() {
+    local path="$1"
+    wslpath -u "$path"
+}
+
+path_to_win() {
+    local path=$1
+    wslpath -w "$path"
+}
 
 # ===================== Setup Log&Error variables =====================
 
@@ -131,7 +143,7 @@ export LOGDIR
 mkdir -p $LOGDIR || handle_error $COMMAND_EXECUTION_FAIL "Failed to create log directory."
 
 # Log file path
-LOGFILE="/var/log/WinBackupAutomation/history.log"
+LOGFILE="$LOGDIR/history.log"
 export LOGFILE
 
 touch $LOGFILE || handle_error $COMMAND_EXECUTION_FAIL "Failed to create log file."
@@ -172,6 +184,10 @@ WIN_USERNAME=$(wslvar USERNAME)
 # Windows Home Directory
 WIN_HOME=$(wslpath `wslvar USERPROFILE`)
 
+# Backup Directory
+BACKUP_DIR="$WIN_HOME/backup"
+
+mkdir -p $BACKUP_DIR || handle_error $COMMAND_EXECUTION_FAIL "Failed to create backup directory."
 
 # ===================== Setup Dependencies =====================
 

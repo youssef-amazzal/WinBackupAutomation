@@ -1,44 +1,63 @@
 #!/bin/bash
 
-zip_and_backup() {
-    local dir="$1"
-    local backup_dir="$2"
+# Source the setupEnv.sh script
+source setupEnv.sh
 
-    # Get the directory name
-    local dirname=$(basename "$dir")
-    echo "$dir"
-    # Create a tarball of the directory contents using tar command
-    if ! tar -czf "$backup_dir/${dirname}.tar.gz" -C "$dir" .;  then
-        echo "Error: Failed to create tarball of directory '$dir'."
+# Function to create a tarball of a directory
+create_tarball() {
+    local dir="$1"
+    local dirname=$(basename `path_to_wsl "$dir"`)
+
+    # Convert the Windows-style path to a Linux-style path
+    local linux_dir=$(path_to_wsl "$dir")
+
+    # Append the directory to the existing tarball
+    if ! (cd "$linux_dir" && tar -rf "$BACKUP_DIR/WinBackup.tar" .);  then
+        echo "Error: Failed to add directory '$dir' to tarball."
         exit 1
     fi
 
-    # Add the original path to CSV
-    echo "$dir,$backup_dir/${dirname}.tar.gz" >> "$backup_dir/original_paths.csv"
-
-    echo "Directory '$dir' tarballed and added to backup."
+    echo "$dir,$dirname" >> "$BACKUP_DIR/original_paths.csv"
+    echo "Directory '$dir' added to tarball."
 }
 
-backup_dir="/mnt/c/Users/Youssef/backup"
-mkdir -p "$backup_dir"
+check_directory() {
+    local dir="$1"
 
-echo "Original_Path,Backup_Path" > "$backup_dir/original_paths.csv"
-
-echo "Reading directories from file..."
-
-WIN_PWD="//wsl.localhost/Ubuntu/$(pwd)"
-BACKUP_PATHS=$(cat directories_to_backup.txt)
-for dir in $BACKUP_PATHS; do
-    # Check if the directory exists using Linux test command
     if ! test -d "$dir"; then
         echo "Error: Directory '$dir' does not exist."
-        continue
+        return 1
     fi
-    # Check if the directory is empty
+
+    return 0
+}
+
+prompt_tarball() {
+    local dir="$1"
 
     read -p "Do you want to tarball directory '$dir'? (y/n): " choice
 
     if [ "$choice" = "y" ]; then
-        zip_and_backup "$dir" "$backup_dir"
+        create_tarball "$dir"
     fi
-done
+}
+
+main() {
+    echo "Original_Path,Name" > "$BACKUP_DIR/original_paths.csv"
+    echo "Reading directories from file..."
+
+    # Remove the existing tarball if it exists
+    rm -f "$BACKUP_DIR/WinBackup.tar"
+
+    local backup_paths=$(cat directories_to_backup.txt)
+    for dir in $backup_paths; do
+        if check_directory $(path_to_wsl "$dir"); then
+            prompt_tarball "$dir"
+        fi
+    done
+
+    # Compress the tarball
+    gzip "$BACKUP_DIR/WinBackup.tar"
+}
+
+main
