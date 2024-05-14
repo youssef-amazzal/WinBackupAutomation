@@ -11,13 +11,16 @@ create_tarball() {
     # Convert the Windows-style path to a Linux-style path
     local linux_dir=$(path_to_wsl "$dir")
 
+    # Get the parent directory of the original path
+    local parent_dir=$(dirname "$linux_dir")
+
     # Append the directory to the existing tarball
-    if ! (cd "$linux_dir" && tar -rf "$BACKUP_DIR/WinBackup.tar" .);  then
+    if ! (cd "$(dirname "$linux_dir")" && tar -rf "$BACKUP_DIR/WinBackup.tar" "$(basename "$linux_dir")");  then
         echo "Error: Failed to add directory '$dir' to tarball."
         exit 1
     fi
 
-    echo "$dir,$dirname" >> "$BACKUP_DIR/original_paths.csv"
+    echo "$parent_dir,$dirname" >> "$BACKUP_DIR/original_paths.csv"
     echo "Directory '$dir' added to tarball."
 }
 
