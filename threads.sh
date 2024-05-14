@@ -8,9 +8,7 @@ process_lines() {
     local start_line=$1
     local end_line=$2
     local thread_num=$3
-    local line_num=$start_line
-    
-   
+    local line_num=$start_line   
     
     while [ $line_num -le $end_line ]; do
         sed -n "${line_num}p" "$filename"

@@ -19,7 +19,7 @@ zip_and_backup() {
     echo "Directory '$dir' tarballed and added to backup."
 }
 
-backup_dir="/mnt/c/Users/simob/backup"
+backup_dir="/mnt/c/Users/Youssef/backup"
 mkdir -p "$backup_dir"
 
 echo "Original_Path,Backup_Path" > "$backup_dir/original_paths.csv"

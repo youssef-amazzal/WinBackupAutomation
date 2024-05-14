@@ -11,4 +11,5 @@ if (-not $module) {
     Write-Host "Microsoft.WinGet.Client module has been installed."
 } else {
     Write-Host "Microsoft.WinGet.Client module is already installed."
+    exit 100
 }

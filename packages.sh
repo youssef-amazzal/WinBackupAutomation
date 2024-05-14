@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# Base path for WSL
-BasePath="//wsl.localhost/Ubuntu/$(pwd)"
-
 # Install dependencies if not already installed
-/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -Command "Start-Process -Wait -Verb RunAs powershell -ArgumentList '-ExecutionPolicy Bypass -Command cd \"$BasePath\"; .\\InstallDeps.ps1'"
+$PWSH -Command "Start-Process -Wait -Verb RunAs powershell -ArgumentList '-ExecutionPolicy Bypass -Command cd \"$WIN_SCRIPT_PATH\"; .\\InstallDeps.ps1'"
 
 # Run winget list and store the output in a variable
-Raw_Ids=$(/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe "Get-WinGetPackage | Where-Object Source -in 'winget', 'msstore' | Select-Object -Property Id,Name | ConvertTo-Csv -NoTypeInformation | Select-Object -Skip 1")
+Raw_Ids=$($PWSH "Get-WinGetPackage | Where-Object Source -in 'winget', 'msstore' | Select-Object -Property Id,Name | ConvertTo-Csv -NoTypeInformation | Select-Object -Skip 1")
 
 # package.csv file
 echo "Id,Name" > packages.csv
