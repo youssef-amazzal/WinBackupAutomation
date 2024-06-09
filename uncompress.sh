@@ -3,7 +3,6 @@
 # Source the setupEnv.sh script
 source setupEnv.sh
 
-# Function to uncompress a tarball and move the directories back to their original locations
 uncompress_and_move() {
     local original_path="$1"
     local name="$2"
@@ -23,8 +22,9 @@ uncompress_and_move() {
         esac
     fi
 
-    # Move the directory back to its original location
-    if ! rsync -a "$BACKUP_DIR/$name/" "$original_path/$name" && rm -r "$BACKUP_DIR/$name"; then
+    # Move the directory back to its original location and remove it from the current directory
+    rsync -a "$BACKUP_DIR/$name/" "$original_path/$name" && rm -r "$BACKUP_DIR/$name"
+    if [ $? -ne 0 ]; then
         echo "Error: Failed to move directory '$name' to '$original_path'."
         exit 1
     fi

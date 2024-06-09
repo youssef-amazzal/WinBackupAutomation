@@ -7,10 +7,17 @@ load_settings() {
     if [ -f $USER_SETTINGS_FILE ]; then
         source $USER_SETTINGS_FILE
     else
-        # Default settings
-        LOGFILE="/var/log/WinBackupAutomation/history.log"
+        # Log Directory
         LOGDIR="$HOME/WinBackupAutomation"
-        # Add other variables here
+        export LOGDIR
+
+        mkdir -p $LOGDIR || handle_error $COMMAND_EXECUTION_FAIL "Failed to create log directory."
+
+        # Log file path
+        LOGFILE="$LOGDIR/history.log"
+        export LOGFILE
+
+        touch $LOGFILE || handle_error $COMMAND_EXECUTION_FAIL "Failed to create log file."
     fi
 }
 export -f load_settings
@@ -53,7 +60,9 @@ handle_error() {
     local exit_code=$1
     local message=$2
     log_message 'ERROR' "$message" 'ERROR'
-    display_help
+    if [ $exit_code -eq $OBLIGATORY_PARAMS ] || [ $exit_code -eq $INVALID_OPTION ]; then
+        display_help
+    fi
     exit $exit_code
 }
 export -f handle_error
@@ -96,7 +105,7 @@ export -f pwsh_install_deps
 pwsh_install_package() {
     local id=$1
     log_message 'INFO' "Starting installing package with id: $id..."
-    $PWSH -Command "winget install --id=$id -e" || handle_error $PACKAGE_INSTALL_FAIL "Failed to install package with id: $id."
+    $PWSH -Command "winget install --id=$id -e" > /dev/null 2>&1 || handle_error $COMMAND_EXECUTION_FAIL "Failed to install package with id: $id."
     log_message 'SUCCESS' "Finished installing package with id: $id."
 }
 export -f pwsh_install_package
@@ -109,20 +118,19 @@ pwsh_get_installed_packages() {
 }
 export -f pwsh_get_installed_packages
 
-pwsh_get_installed_package() {
+is_package_installed() {
     local id=$1
-    log_message 'INFO' "Getting installed package with id: $id..."
+    log_message 'INFO' "Checking if package with id: $id is installed..."
     local package=$($PWSH -Command "Get-WinGetPackage -Id $id")
     if [[ -z "$package" || "$package" != *"$id"* ]]; then
         log_message 'ERROR' "Package with id: $id is not installed."
         return 1
     else
-        log_message 'SUCCESS' "Installed package with id: $id retrieved."
-        echo "$package"
+        log_message 'SUCCESS' "Package with id: $id is installed."
         return 0
     fi
 }
-export -f pwsh_get_installed_package
+export -f is_package_installed
 
 path_to_wsl() {
     local path="$1"
@@ -134,19 +142,7 @@ path_to_win() {
     wslpath -w "$path"
 }
 
-# ===================== Setup Log&Error variables =====================
-
-# Log Directory
-LOGDIR="$HOME/WinBackupAutomation"
-export LOGDIR
-
-mkdir -p $LOGDIR || handle_error $COMMAND_EXECUTION_FAIL "Failed to create log directory."
-
-# Log file path
-LOGFILE="$LOGDIR/history.log"
-export LOGFILE
-
-touch $LOGFILE || handle_error $COMMAND_EXECUTION_FAIL "Failed to create log file."
+# ===================== Setup Error variables =====================
 
 # Error Handling
 INVALID_OPTION=100

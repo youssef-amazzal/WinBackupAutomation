@@ -20,28 +20,18 @@ get_packages() {
     echo "${lines[@]}"
 }
 
-# Function to check if a package is already installed
-check_package() {
-    local id=$1
-    local package_name=$2
-    log_message 'INFO' "Checking if package $package_name is installed..."
-    if ! pwsh_get_installed_package $id | grep -q "$id"; then
-        return 1
-    else
-        return 0
-    fi
-}
-
 # Function to install a package
 install_package() {
     local id=$1
     local package_name=$2
-    pwsh_install_package "$id"
-    if ! pwsh_get_installed_package $id | grep -q "$id"; then
-        log_message "ERROR" "Failed to install package: $package_name"
-        echo "$package_name" >> failed_packages.txt
-    else
-        log_message "INFO" "Successfully installed package: $package_name"
+    if ! is_package_installed $id; then
+        pwsh_install_package "$id"
+        if ! is_package_installed $id; then
+            log_message "ERROR" "Failed to install package: $package_name"
+            echo "$package_name" >> failed_packages.txt
+        else
+            log_message "INFO" "Successfully installed package: $package_name"
+        fi
     fi
 }
 
@@ -56,13 +46,8 @@ main() {
         id=${id//\"/}  # Remove double quotes from id
         package_name=${package_name//\"/}  # Remove double quotes from package_name
         
-        log_message "INFO" "Checking package: $package_name"
-        if check_package "$id"; then
-            log_message "SUCCESS" "Package already installed: $package_name"
-        else
-            log_message "INFO" "Installing package: $package_name"
-            install_package "$id" "$package_name"
-        fi
+        log_message "INFO" "Installing package: $package_name"
+        install_package "$id" "$package_name"
     done
 
     if [[ $? -ne 0 ]]; then

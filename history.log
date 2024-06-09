@@ -1,142 +1,93 @@
-2024-05-14-15-27-11 : youssef : INFO : Checking package: 7-Zip
-2024-05-14-15-27-11 : youssef : INFO : Getting installed packages...
-2024-05-14-15-27-30 : youssef : SUCCESS : Installed packages retrieved.
-2024-05-14-15-27-30 : youssef : SUCCESS : Package already installed: 7-Zip
-2024-05-14-15-27-30 : youssef : INFO : Checking package: CLion
-2024-05-14-15-27-30 : youssef : INFO : Getting installed packages...
-2024-05-14-15-27-35 : youssef : SUCCESS : Installed packages retrieved.
-2024-05-14-15-27-35 : youssef : SUCCESS : Package already installed: CLion
-2024-05-14-15-27-35 : youssef : INFO : Checking package: CPUID CPU-Z
-2024-05-14-15-27-35 : youssef : INFO : Getting installed packages...
-2024-05-14-15-28-21 : youssef : INFO : Checking package: 7-Zip JetBrains.CLion,CLion CPUID.CPU-Z,CPUID CPU-Z Canonical.Ubuntu.2204,Ubuntu 22.04 LTS Discord.Discord,Discord Ditto.Ditto,Ditto IObit.DriverBooster,Driver Booster GitHub.GitHubDesktop,GitHub Desktop Git.Git,Git Gyan.FFmpeg,FFmpeg Tonec.InternetDownloadManager,Internet Download Manager 9N41MSQ1WNM8,Okular KDE.Krita,Krita Martchus.syncthingtray,syncthingtray Microsoft.Edge,Microsoft Edge Microsoft.Edge.Dev,Microsoft Edge Dev Microsoft.EdgeWebView2Runtime,Microsoft Edge WebView2 Runtime Microsoft.AppInstaller,App Installer 9PCFS5B6T72H,Paint 9MZ95KL8MR0L,Snipping Tool Microsoft.UI.Xaml.2.7,Microsoft.UI.Xaml Microsoft.UI.Xaml.2.8,Microsoft.UI.Xaml Microsoft.VCLibs.Desktop.14,Microsoft Visual C++ 2015 UWP Desktop Runtime Package 9WZDNCRFJ3PR,Windows Clock 9WZDNCRFHVN5,Windows Calculator 9MSMLRH6LZF3,Windows Notepad Microsoft.WindowsTerminal,Windows Terminal 9NZKPSTSNW4P,Game Bar 9WZDNCRFJ3PT,Windows Media Player Notepad++.Notepad++,Notepad++ OBSProject.OBSStudio,OBS Studio XPFFZHVGQWWLHB,OneNote Playnite.Playnite,Playnite Spicetify.Spicetify,Spicetify Spotify.Spotify,Spotify StartIsBack.StartAllBack,StartAllBack 9NGQM8FPH9WQ,Concepts Wacom.WacomTabletDriver,Wacom Tablet JetBrains.WebStorm,WebStorm XavierRoche.HTTrack,WinHTTrack Website Copier AntibodySoftware.WizTree,WizTree Obsidian.Obsidian,Obsidian chrisant996.Clink,Clink Levitsky.FontBase,FontBase qBittorrent.qBittorrent,qBittorrent ApacheFriends.Xampp.8.1,XAMPP 8.1 Microsoft.VCRedist.2013.x64,Microsoft Visual C++ 2013 Redistributable (x64) Microsoft.DotNet.SDK.8,Microsoft .NET SDK 8.0 Microsoft.VCRedist.2010.x64,Microsoft Visual C++ 2010 x64 Redistributable 7zip.7zip,7-Zip CLechasseur.PathCopyCopy,Path Copy Copy Kitware.CMake,CMake Microsoft.WindowsSDK.10.0.19041,Windows Software Development Kit GitHub.cli,GitHub CLI Microsoft.DotNet.DesktopRuntime.8,Microsoft .NET Windows Desktop Runtime 8.0 Microsoft.PowerToys,PowerToys (Preview) Microsoft.VCRedist.2015+.x64,Microsoft Visual C++ 2015-2022 Redistributable (x64) Microsoft.VCRedist.2008.x64,Microsoft Visual C++ 2008 Redistributable - x64 Tiled.Tiled,Tiled Microsoft.VCRedist.2005.x86,Microsoft Visual C++ 2005 Redistributable Microsoft.VisualStudioCode,Microsoft Visual Studio Code Microsoft.DotNet.Runtime.3_1,Microsoft .NET Runtime 3.1 Microsoft.DotNet.Framework.DeveloperPack_4,.NET Framework Microsoft.VCRedist.2015+.x86,Microsoft Visual C++ 2015-2022 Redistributable (x86) Oracle.VirtualBox,Oracle VM VirtualBox VideoLAN.VLC,VLC media player AdrienAllard.FileConverter,File Converter Microsoft.VCRedist.2008.x86,Microsoft Visual C++ 2008 Redistributable - x86 voidtools.Everything,Everything PeterStrick.ViVeTool-GUI,ViVeTool GUI Microsoft.VSTOR,Microsoft Visual Studio 2010 Tools for Office Runtime Microsoft.XNARedist,Microsoft XNA Framework Redistributable Refresh Microsoft.VCRedist.2010.x86,Microsoft Visual C++ 2010 x86 Redistributable Microsoft.PowerShell,PowerShell Microsoft.VCRedist.2005.x86,Microsoft Visual C++ 2005 Redistributable Microsoft.DotNet.DesktopRuntime.8,Microsoft .NET Windows Desktop Runtime 8.0 Klocman.BulkCrapUninstaller,BCUninstaller Microsoft.DotNet.DesktopRuntime.8,Microsoft .NET Windows Desktop Runtime 8.0
-2024-05-14-15-28-21 : youssef : INFO : Getting installed package with id: 7zip.7zip...
-2024-05-14-15-28-22 : youssef : INFO : Package already installed: 7-Zip JetBrains.CLion,CLion CPUID.CPU-Z,CPUID CPU-Z Canonical.Ubuntu.2204,Ubuntu 22.04 LTS Discord.Discord,Discord Ditto.Ditto,Ditto IObit.DriverBooster,Driver Booster GitHub.GitHubDesktop,GitHub Desktop Git.Git,Git Gyan.FFmpeg,FFmpeg Tonec.InternetDownloadManager,Internet Download Manager 9N41MSQ1WNM8,Okular KDE.Krita,Krita Martchus.syncthingtray,syncthingtray Microsoft.Edge,Microsoft Edge Microsoft.Edge.Dev,Microsoft Edge Dev Microsoft.EdgeWebView2Runtime,Microsoft Edge WebView2 Runtime Microsoft.AppInstaller,App Installer 9PCFS5B6T72H,Paint 9MZ95KL8MR0L,Snipping Tool Microsoft.UI.Xaml.2.7,Microsoft.UI.Xaml Microsoft.UI.Xaml.2.8,Microsoft.UI.Xaml Microsoft.VCLibs.Desktop.14,Microsoft Visual C++ 2015 UWP Desktop Runtime Package 9WZDNCRFJ3PR,Windows Clock 9WZDNCRFHVN5,Windows Calculator 9MSMLRH6LZF3,Windows Notepad Microsoft.WindowsTerminal,Windows Terminal 9NZKPSTSNW4P,Game Bar 9WZDNCRFJ3PT,Windows Media Player Notepad++.Notepad++,Notepad++ OBSProject.OBSStudio,OBS Studio XPFFZHVGQWWLHB,OneNote Playnite.Playnite,Playnite Spicetify.Spicetify,Spicetify Spotify.Spotify,Spotify StartIsBack.StartAllBack,StartAllBack 9NGQM8FPH9WQ,Concepts Wacom.WacomTabletDriver,Wacom Tablet JetBrains.WebStorm,WebStorm XavierRoche.HTTrack,WinHTTrack Website Copier AntibodySoftware.WizTree,WizTree Obsidian.Obsidian,Obsidian chrisant996.Clink,Clink Levitsky.FontBase,FontBase qBittorrent.qBittorrent,qBittorrent ApacheFriends.Xampp.8.1,XAMPP 8.1 Microsoft.VCRedist.2013.x64,Microsoft Visual C++ 2013 Redistributable (x64) Microsoft.DotNet.SDK.8,Microsoft .NET SDK 8.0 Microsoft.VCRedist.2010.x64,Microsoft Visual C++ 2010 x64 Redistributable 7zip.7zip,7-Zip CLechasseur.PathCopyCopy,Path Copy Copy Kitware.CMake,CMake Microsoft.WindowsSDK.10.0.19041,Windows Software Development Kit GitHub.cli,GitHub CLI Microsoft.DotNet.DesktopRuntime.8,Microsoft .NET Windows Desktop Runtime 8.0 Microsoft.PowerToys,PowerToys (Preview) Microsoft.VCRedist.2015+.x64,Microsoft Visual C++ 2015-2022 Redistributable (x64) Microsoft.VCRedist.2008.x64,Microsoft Visual C++ 2008 Redistributable - x64 Tiled.Tiled,Tiled Microsoft.VCRedist.2005.x86,Microsoft Visual C++ 2005 Redistributable Microsoft.VisualStudioCode,Microsoft Visual Studio Code Microsoft.DotNet.Runtime.3_1,Microsoft .NET Runtime 3.1 Microsoft.DotNet.Framework.DeveloperPack_4,.NET Framework Microsoft.VCRedist.2015+.x86,Microsoft Visual C++ 2015-2022 Redistributable (x86) Oracle.VirtualBox,Oracle VM VirtualBox VideoLAN.VLC,VLC media player AdrienAllard.FileConverter,File Converter Microsoft.VCRedist.2008.x86,Microsoft Visual C++ 2008 Redistributable - x86 voidtools.Everything,Everything PeterStrick.ViVeTool-GUI,ViVeTool GUI Microsoft.VSTOR,Microsoft Visual Studio 2010 Tools for Office Runtime Microsoft.XNARedist,Microsoft XNA Framework Redistributable Refresh Microsoft.VCRedist.2010.x86,Microsoft Visual C++ 2010 x86 Redistributable Microsoft.PowerShell,PowerShell Microsoft.VCRedist.2005.x86,Microsoft Visual C++ 2005 Redistributable Microsoft.DotNet.DesktopRuntime.8,Microsoft .NET Windows Desktop Runtime 8.0 Klocman.BulkCrapUninstaller,BCUninstaller Microsoft.DotNet.DesktopRuntime.8,Microsoft .NET Windows Desktop Runtime 8.0
-2024-05-14-15-28-58 : youssef : INFO : Checking package: 7-Zip
-2024-05-14-15-28-58 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-28-58 : youssef : INFO : Getting installed package with id: 7zip.7zip...
-2024-05-14-15-28-59 : youssef : SUCCESS : Package already installed: 7-Zip
-2024-05-14-15-28-59 : youssef : INFO : Checking package: CLion
-2024-05-14-15-28-59 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-28-59 : youssef : INFO : Getting installed package with id: JetBrains.CLion...
-2024-05-14-15-29-00 : youssef : SUCCESS : Package already installed: CLion
-2024-05-14-15-29-00 : youssef : INFO : Checking package: CPUID CPU-Z
-2024-05-14-15-29-00 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-00 : youssef : INFO : Getting installed package with id: CPUID.CPU-Z...
-2024-05-14-15-29-02 : youssef : SUCCESS : Package already installed: CPUID CPU-Z
-2024-05-14-15-29-02 : youssef : INFO : Checking package: Ubuntu 22.04 LTS
-2024-05-14-15-29-02 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-02 : youssef : INFO : Getting installed package with id: Canonical.Ubuntu.2204...
-2024-05-14-15-29-03 : youssef : SUCCESS : Package already installed: Ubuntu 22.04 LTS
-2024-05-14-15-29-03 : youssef : INFO : Checking package: Discord
-2024-05-14-15-29-03 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-03 : youssef : INFO : Getting installed package with id: Discord.Discord...
-2024-05-14-15-29-30 : youssef : INFO : Checking package: 7-Zip
-2024-05-14-15-29-30 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-30 : youssef : INFO : Getting installed package with id: 7zip.7zip...
-2024-05-14-15-29-32 : youssef : SUCCESS : Package already installed: 7-Zip
-2024-05-14-15-29-32 : youssef : INFO : Checking package: CLion
-2024-05-14-15-29-32 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-32 : youssef : INFO : Getting installed package with id: JetBrains.CLion...
-2024-05-14-15-29-32 : youssef : SUCCESS : Package already installed: CLion
-2024-05-14-15-29-32 : youssef : INFO : Checking package: CPUID CPU-Z
-2024-05-14-15-29-32 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-32 : youssef : INFO : Getting installed package with id: CPUID.CPU-Z...
-2024-05-14-15-29-34 : youssef : SUCCESS : Package already installed: CPUID CPU-Z
-2024-05-14-15-29-34 : youssef : INFO : Checking package: Ubuntu 22.04 LTS
-2024-05-14-15-29-34 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-34 : youssef : INFO : Getting installed package with id: Canonical.Ubuntu.2204...
-2024-05-14-15-29-35 : youssef : SUCCESS : Package already installed: Ubuntu 22.04 LTS
-2024-05-14-15-29-35 : youssef : INFO : Checking package: Discord
-2024-05-14-15-29-35 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-35 : youssef : INFO : Getting installed package with id: Discord.Discord...
-2024-05-14-15-29-36 : youssef : SUCCESS : Package already installed: Discord
-2024-05-14-15-29-36 : youssef : INFO : Checking package: Ditto
-2024-05-14-15-29-36 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-36 : youssef : INFO : Getting installed package with id: Ditto.Ditto...
-2024-05-14-15-29-37 : youssef : SUCCESS : Package already installed: Ditto
-2024-05-14-15-29-37 : youssef : INFO : Checking package: Driver Booster
-2024-05-14-15-29-37 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-37 : youssef : INFO : Getting installed package with id: IObit.DriverBooster...
-2024-05-14-15-29-38 : youssef : SUCCESS : Package already installed: Driver Booster
-2024-05-14-15-29-38 : youssef : INFO : Checking package: GitHub Desktop
-2024-05-14-15-29-38 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-38 : youssef : INFO : Getting installed package with id: GitHub.GitHubDesktop...
-2024-05-14-15-29-39 : youssef : SUCCESS : Package already installed: GitHub Desktop
-2024-05-14-15-29-39 : youssef : INFO : Checking package: Git
-2024-05-14-15-29-39 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-39 : youssef : INFO : Getting installed package with id: Git.Git...
-2024-05-14-15-29-41 : youssef : SUCCESS : Package already installed: Git
-2024-05-14-15-29-41 : youssef : INFO : Checking package: FFmpeg
-2024-05-14-15-29-41 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-41 : youssef : INFO : Getting installed package with id: Gyan.FFmpeg...
-2024-05-14-15-29-42 : youssef : SUCCESS : Package already installed: FFmpeg
-2024-05-14-15-29-42 : youssef : INFO : Checking package: Internet Download Manager
-2024-05-14-15-29-42 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-42 : youssef : INFO : Getting installed package with id: Tonec.InternetDownloadManager...
-2024-05-14-15-29-43 : youssef : SUCCESS : Package already installed: Internet Download Manager
-2024-05-14-15-29-43 : youssef : INFO : Checking package: Okular
-2024-05-14-15-29-43 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-43 : youssef : INFO : Getting installed package with id: 9N41MSQ1WNM8...
-2024-05-14-15-29-44 : youssef : SUCCESS : Package already installed: Okular
-2024-05-14-15-29-44 : youssef : INFO : Checking package: Krita
-2024-05-14-15-29-44 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-44 : youssef : INFO : Getting installed package with id: KDE.Krita...
-2024-05-14-15-29-45 : youssef : SUCCESS : Package already installed: Krita
-2024-05-14-15-29-45 : youssef : INFO : Checking package: syncthingtray
-2024-05-14-15-29-45 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-29-45 : youssef : INFO : Getting installed package with id: Martchus.syncthingtray...
-2024-05-14-15-31-18 : youssef : INFO : Checking package: 7-Zip
-2024-05-14-15-31-18 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-18 : youssef : INFO : Getting installed package with id: 7zip.7zip...
-2024-05-14-15-31-20 : youssef : SUCCESS : Package already installed: 7-Zip
-2024-05-14-15-31-20 : youssef : INFO : Checking package: CLion
-2024-05-14-15-31-20 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-20 : youssef : INFO : Getting installed package with id: JetBrains.CLion...
-2024-05-14-15-31-21 : youssef : SUCCESS : Package already installed: CLion
-2024-05-14-15-31-21 : youssef : INFO : Checking package: CPUID CPU-Z
-2024-05-14-15-31-21 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-21 : youssef : INFO : Getting installed package with id: CPUID.CPU-Z...
-2024-05-14-15-31-22 : youssef : SUCCESS : Package already installed: CPUID CPU-Z
-2024-05-14-15-31-22 : youssef : INFO : Checking package: Ubuntu 22.04 LTS
-2024-05-14-15-31-22 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-22 : youssef : INFO : Getting installed package with id: Canonical.Ubuntu.2204...
-2024-05-14-15-31-23 : youssef : SUCCESS : Package already installed: Ubuntu 22.04 LTS
-2024-05-14-15-31-23 : youssef : INFO : Checking package: Discord
-2024-05-14-15-31-23 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-23 : youssef : INFO : Getting installed package with id: Discord.Discord...
-2024-05-14-15-31-24 : youssef : SUCCESS : Package already installed: Discord
-2024-05-14-15-31-24 : youssef : INFO : Checking package: Ditto
-2024-05-14-15-31-24 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-24 : youssef : INFO : Getting installed package with id: Ditto.Ditto...
-2024-05-14-15-31-25 : youssef : SUCCESS : Package already installed: Ditto
-2024-05-14-15-31-25 : youssef : INFO : Checking package: Driver Booster
-2024-05-14-15-31-25 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-25 : youssef : INFO : Getting installed package with id: IObit.DriverBooster...
-2024-05-14-15-31-26 : youssef : SUCCESS : Package already installed: Driver Booster
-2024-05-14-15-31-26 : youssef : INFO : Checking package: GitHub Desktop
-2024-05-14-15-31-26 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-26 : youssef : INFO : Getting installed package with id: GitHub.GitHubDesktop...
-2024-05-14-15-31-27 : youssef : SUCCESS : Package already installed: GitHub Desktop
-2024-05-14-15-31-27 : youssef : INFO : Checking package: Git
-2024-05-14-15-31-27 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-28 : youssef : INFO : Getting installed package with id: Git.Git...
-2024-05-14-15-31-28 : youssef : SUCCESS : Package already installed: Git
-2024-05-14-15-31-28 : youssef : INFO : Checking package: FFmpeg
-2024-05-14-15-31-28 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-28 : youssef : INFO : Getting installed package with id: Gyan.FFmpeg...
-2024-05-14-15-31-30 : youssef : SUCCESS : Package already installed: FFmpeg
-2024-05-14-15-31-30 : youssef : INFO : Checking package: Internet Download Manager
-2024-05-14-15-31-30 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-30 : youssef : INFO : Getting installed package with id: Tonec.InternetDownloadManager...
-2024-05-14-15-31-31 : youssef : SUCCESS : Package already installed: Internet Download Manager
-2024-05-14-15-31-31 : youssef : INFO : Checking package: Okular
-2024-05-14-15-31-31 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-31 : youssef : INFO : Getting installed package with id: 9N41MSQ1WNM8...
-2024-05-14-15-31-32 : youssef : SUCCESS : Package already installed: Okular
-2024-05-14-15-31-32 : youssef : INFO : Checking package: Krita
-2024-05-14-15-31-32 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-32 : youssef : INFO : Getting installed package with id: KDE.Krita...
-2024-05-14-15-31-33 : youssef : SUCCESS : Package already installed: Krita
-2024-05-14-15-31-33 : youssef : INFO : Checking package: syncthingtray
-2024-05-14-15-31-33 : youssef : INFO : Checking if package  is installed...
-2024-05-14-15-31-33 : youssef : INFO : Getting installed package with id: Martchus.syncthingtray...
+2024-05-14-17-28-53 : youssef : INFO : Getting installed packages...
+2024-05-14-17-29-01 : youssef : SUCCESS : Installed packages retrieved.
+2024-05-14-17-29-01 : youssef : SUCCESS : Installed packages saved to 'packages.csv' file.
+2024-05-14-17-29-36 : youssef : INFO : Installing package: 7-Zip
+2024-05-14-17-29-36 : youssef : INFO : Checking if package with id: 7zip.7zip is installed...
+2024-05-14-17-29-38 : youssef : SUCCESS : Package with id: 7zip.7zip is installed.
+2024-05-14-17-29-38 : youssef : INFO : Installing package: CLion
+2024-05-14-17-29-38 : youssef : INFO : Checking if package with id: JetBrains.CLion is installed...
+2024-05-14-17-29-39 : youssef : SUCCESS : Package with id: JetBrains.CLion is installed.
+2024-05-14-17-29-39 : youssef : INFO : Installing package: CPUID CPU-Z
+2024-05-14-17-29-39 : youssef : INFO : Checking if package with id: CPUID.CPU-Z is installed...
+2024-05-14-17-29-40 : youssef : ERROR : Package with id: CPUID.CPU-Z is not installed.
+2024-05-14-17-29-40 : youssef : INFO : Starting installing package with id: CPUID.CPU-Z...
+2024-05-14-17-29-53 : youssef : SUCCESS : Finished installing package with id: CPUID.CPU-Z.
+2024-05-14-17-29-53 : youssef : INFO : Checking if package with id: CPUID.CPU-Z is installed...
+2024-05-14-17-29-55 : youssef : SUCCESS : Package with id: CPUID.CPU-Z is installed.
+2024-05-14-17-29-55 : youssef : INFO : Successfully installed package: CPUID CPU-Z
+2024-05-14-17-29-55 : youssef : INFO : Installing package: Ubuntu 22.04 LTS
+2024-05-14-17-29-55 : youssef : INFO : Checking if package with id: Canonical.Ubuntu.2204 is installed...
+2024-05-14-17-29-56 : youssef : SUCCESS : Package with id: Canonical.Ubuntu.2204 is installed.
+2024-05-14-17-29-56 : youssef : INFO : Installing package: Discord
+2024-05-14-17-29-56 : youssef : INFO : Checking if package with id: Discord.Discord is installed...
+2024-05-14-17-29-58 : youssef : SUCCESS : Package with id: Discord.Discord is installed.
+2024-05-14-17-29-58 : youssef : INFO : Installing package: Ditto
+2024-05-14-17-29-58 : youssef : INFO : Checking if package with id: Ditto.Ditto is installed...
+2024-05-14-17-29-59 : youssef : SUCCESS : Package with id: Ditto.Ditto is installed.
+2024-05-14-17-29-59 : youssef : INFO : Installing package: Driver Booster
+2024-05-14-17-29-59 : youssef : INFO : Checking if package with id: IObit.DriverBooster is installed...
+2024-05-14-17-30-01 : youssef : SUCCESS : Package with id: IObit.DriverBooster is installed.
+2024-05-14-17-30-01 : youssef : INFO : Installing package: GitHub Desktop
+2024-05-14-17-30-01 : youssef : INFO : Checking if package with id: GitHub.GitHubDesktop is installed...
+2024-05-14-17-30-02 : youssef : SUCCESS : Package with id: GitHub.GitHubDesktop is installed.
+2024-05-14-17-30-02 : youssef : INFO : Installing package: Git
+2024-05-14-17-30-02 : youssef : INFO : Checking if package with id: Git.Git is installed...
+2024-05-14-17-30-03 : youssef : SUCCESS : Package with id: Git.Git is installed.
+2024-05-14-17-30-03 : youssef : INFO : Installing package: FFmpeg
+2024-05-14-17-30-03 : youssef : INFO : Checking if package with id: Gyan.FFmpeg is installed...
+2024-05-14-17-30-05 : youssef : SUCCESS : Package with id: Gyan.FFmpeg is installed.
+2024-05-14-17-30-05 : youssef : INFO : Installing package: Internet Download Manager
+2024-05-14-17-30-05 : youssef : INFO : Checking if package with id: Tonec.InternetDownloadManager is installed...
+2024-05-14-17-30-07 : youssef : SUCCESS : Package with id: Tonec.InternetDownloadManager is installed.
+2024-05-14-17-30-07 : youssef : INFO : Installing package: Okular
+2024-05-14-17-30-07 : youssef : INFO : Checking if package with id: 9N41MSQ1WNM8 is installed...
+2024-05-14-17-30-08 : youssef : SUCCESS : Package with id: 9N41MSQ1WNM8 is installed.
+2024-05-14-17-30-08 : youssef : INFO : Installing package: Krita
+2024-05-14-17-30-08 : youssef : INFO : Checking if package with id: KDE.Krita is installed...
+2024-05-14-17-30-09 : youssef : SUCCESS : Package with id: KDE.Krita is installed.
+2024-05-14-17-30-09 : youssef : INFO : Installing package: syncthingtray
+2024-05-14-17-30-09 : youssef : INFO : Checking if package with id: Martchus.syncthingtray is installed...
+2024-05-14-17-48-56 : youssef : INFO : Getting installed packages...
+2024-05-14-17-49-10 : youssef : SUCCESS : Installed packages retrieved.
+2024-05-14-17-49-10 : youssef : SUCCESS : Installed packages saved to 'packages.csv' file.
+2024-05-14-17-49-53 : youssef : INFO : Installing package: 7-Zip
+2024-05-14-17-49-53 : youssef : INFO : Checking if package with id: 7zip.7zip is installed...
+2024-05-14-17-49-56 : youssef : SUCCESS : Package with id: 7zip.7zip is installed.
+2024-05-14-17-49-56 : youssef : INFO : Installing package: CLion
+2024-05-14-17-49-56 : youssef : INFO : Checking if package with id: JetBrains.CLion is installed...
+2024-05-14-17-49-57 : youssef : SUCCESS : Package with id: JetBrains.CLion is installed.
+2024-05-14-17-49-57 : youssef : INFO : Installing package: CPUID CPU-Z
+2024-05-14-17-49-57 : youssef : INFO : Checking if package with id: CPUID.CPU-Z is installed...
+2024-05-14-17-49-59 : youssef : ERROR : Package with id: CPUID.CPU-Z is not installed.
+2024-05-14-17-49-59 : youssef : INFO : Starting installing package with id: CPUID.CPU-Z...
+2024-05-14-17-50-07 : youssef : SUCCESS : Finished installing package with id: CPUID.CPU-Z.
+2024-05-14-17-50-07 : youssef : INFO : Checking if package with id: CPUID.CPU-Z is installed...
+2024-05-14-17-50-09 : youssef : SUCCESS : Package with id: CPUID.CPU-Z is installed.
+2024-05-14-17-50-09 : youssef : INFO : Successfully installed package: CPUID CPU-Z
+2024-05-14-17-50-09 : youssef : INFO : Installing package: Ubuntu 22.04 LTS
+2024-05-14-17-50-09 : youssef : INFO : Checking if package with id: Canonical.Ubuntu.2204 is installed...
+2024-05-14-23-11-16 : youssef : INFO : Getting installed packages...
+2024-05-14-23-11-32 : youssef : SUCCESS : Installed packages retrieved.
+2024-05-14-23-11-32 : youssef : SUCCESS : Installed packages saved to 'packages.csv' file.
+2024-05-14-23-43-13 : youssef : INFO : Getting installed packages...
+2024-05-14-23-43-25 : youssef : SUCCESS : Installed packages retrieved.
+2024-05-14-23-43-25 : youssef : SUCCESS : Installed packages saved to 'packages.csv' file.
+2024-05-14-23-48-05 : youssef : INFO : Installing package: 7-Zip
+2024-05-14-23-48-05 : youssef : INFO : Checking if package with id: 7zip.7zip is installed...
+2024-05-14-23-48-06 : youssef : SUCCESS : Package with id: 7zip.7zip is installed.
+2024-05-14-23-48-06 : youssef : INFO : Installing package: CLion
+2024-05-14-23-48-06 : youssef : INFO : Checking if package with id: JetBrains.CLion is installed...
+2024-05-14-23-48-07 : youssef : SUCCESS : Package with id: JetBrains.CLion is installed.
+2024-05-14-23-48-07 : youssef : INFO : Installing package: CPUID CPU-Z
+2024-05-14-23-48-07 : youssef : INFO : Checking if package with id: CPUID.CPU-Z is installed...
+2024-05-14-23-48-08 : youssef : ERROR : Package with id: CPUID.CPU-Z is not installed.
+2024-05-14-23-48-08 : youssef : INFO : Starting installing package with id: CPUID.CPU-Z...
+2024-05-14-23-48-16 : youssef : SUCCESS : Finished installing package with id: CPUID.CPU-Z.
+2024-05-14-23-48-16 : youssef : INFO : Checking if package with id: CPUID.CPU-Z is installed...
+2024-05-14-23-48-17 : youssef : SUCCESS : Package with id: CPUID.CPU-Z is installed.
+2024-05-14-23-48-17 : youssef : INFO : Successfully installed package: CPUID CPU-Z
+2024-05-14-23-48-17 : youssef : INFO : Installing package: Ubuntu 22.04 LTS
+2024-05-14-23-48-17 : youssef : INFO : Checking if package with id: Canonical.Ubuntu.2204 is installed...
+2024-05-14-23-48-19 : youssef : SUCCESS : Package with id: Canonical.Ubuntu.2204 is installed.
+2024-05-14-23-48-19 : youssef : INFO : Installing package: Discord
+2024-05-14-23-48-19 : youssef : INFO : Checking if package with id: Discord.Discord is installed...
